@@ -1,0 +1,116 @@
+/* Main Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Georgia, serif;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Background Image for Each Page */
+.page {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page-1 {
+    background-image: url('https://i.postimg.cc/LhdT0Pf8/utpimage0.jpg');
+    display: flex;
+}
+
+.page-2 {
+    background-image: url('https://i.postimg.cc/xTDf07TX/utpimage1.jpg');
+}
+
+.page-3 {
+    background-image: url('https://i.postimg.cc/rwgMNwG4/utpimage2.jpg');
+}
+
+.page-4 {
+    background-image: url('https://i.postimg.cc/9MrK6G4d/utpimage4.jpg');
+}
+
+.page-5 {
+    background-image: url('https://i.postimg.cc/255KW47s/utpimage3.jpg');
+}
+
+/* Header Style */
+h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.0);
+    font-size: 48px;
+}
+
+/* Button Styles */
+.button {
+    padding: 15px 25px;
+    font-size: 18px;
+    font-family: 'Lucida Console', monospace; 
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Info Box */
+.info-box {
+    display: inline;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    max-width: 60%;
+    height: auto;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center; /* Centers text */
+}
+
+.info-box p {
+    color: #ffffff; /* White color for paragraphs */
+}
+
+.info-box a {
+    color: #ffffff; /* White color for links */
+}
+
+.info-box img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px; /* Adjust max width */
+    background: #000;
+    margin: 20px auto; /* Center the video */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
